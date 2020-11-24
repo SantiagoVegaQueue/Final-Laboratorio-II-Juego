@@ -13,6 +13,12 @@ public class Player : MonoBehaviour
     public float alturaMinima;
 
     public int vida = 3;
+    private Shake shake;
+
+    private void Start()
+    {
+        shake = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<Shake>();
+    }
 
     private void Update()
     {
@@ -23,11 +29,13 @@ public class Player : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, posicion, velocidadVertical * Time.deltaTime);
         if (Input.GetKeyDown(KeyCode.UpArrow) && transform.position.y < alturaMaxima)
         {
+            shake.CamShake();
             posicion = new Vector2(transform.position.x, transform.position.y + movientoVertical);
           
         }
         if (Input.GetKeyDown(KeyCode.DownArrow) && transform.position.y > alturaMinima)
         {
+            shake.CamShake();
             posicion = new Vector2(transform.position.x, transform.position.y - movientoVertical);
            
         }
