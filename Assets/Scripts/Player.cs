@@ -33,13 +33,13 @@ public class Player : MonoBehaviour
 
         transform.position = Vector2.MoveTowards(transform.position, posicion, velocidadVertical * Time.deltaTime);
         
-        if (Input.GetKeyDown(KeyCode.UpArrow) && transform.position.y < alturaMaxima)
+        if (Input.GetKeyDown(KeyCode.W) && transform.position.y < alturaMaxima)
         {
             shake.CamShake();
             posicion = new Vector2(transform.position.x, transform.position.y + movientoVertical);
           
         }
-        if (Input.GetKeyDown(KeyCode.DownArrow) && transform.position.y > alturaMinima)
+        if (Input.GetKeyDown(KeyCode.S) && transform.position.y > alturaMinima)
         {
             shake.CamShake();
             posicion = new Vector2(transform.position.x, transform.position.y - movientoVertical);
