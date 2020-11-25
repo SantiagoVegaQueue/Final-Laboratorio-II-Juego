@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     private Vector2 posicion;
@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
 
     public int vida = 3;
     private Shake shake;
+    public Text vidaPantalla;
 
     private void Start()
     {
@@ -22,6 +23,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        vidaPantalla.text = vida.ToString();
         if (vida <= 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
