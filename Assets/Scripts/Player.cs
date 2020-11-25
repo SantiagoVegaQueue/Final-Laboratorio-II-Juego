@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     public int vida = 3;
     private Shake shake;
     public Text vidaPantalla;
+    public GameObject gameOver;
 
     private void Start()
     {
@@ -26,9 +27,12 @@ public class Player : MonoBehaviour
         vidaPantalla.text = vida.ToString();
         if (vida <= 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            gameOver.SetActive(true);
+            Destroy(gameObject);
         }
+
         transform.position = Vector2.MoveTowards(transform.position, posicion, velocidadVertical * Time.deltaTime);
+        
         if (Input.GetKeyDown(KeyCode.UpArrow) && transform.position.y < alturaMaxima)
         {
             shake.CamShake();
