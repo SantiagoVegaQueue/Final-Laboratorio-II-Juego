@@ -398,7 +398,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 76.1, y: -37.97}
+  m_AnchoredPosition: {x: 76.57, y: -37.473}
   m_SizeDelta: {x: 153.14014, y: 74.94638}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &704244923
@@ -434,7 +434,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: VIDA
+  m_Text: 
 --- !u!222 &704244924
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -502,7 +502,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 6509b7151cbc1fa4aa7de2146d9de0fd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -989,7 +989,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 3bde46d7e2594de4c8fcdcbf16e3eaaf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1087,7 +1087,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 3bde46d7e2594de4c8fcdcbf16e3eaaf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1147,8 +1147,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -20.4, y: -7.5}
-  m_SizeDelta: {x: 578.67554, y: 255.44067}
+  m_AnchoredPosition: {x: 1.7, y: -3.3}
+  m_SizeDelta: {x: 939.20264, y: 419.8916}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1346640664
 MonoBehaviour:
@@ -1183,7 +1183,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Game Over: \nPresiona \"R\" para reiniciar"
+  m_Text: "Game Over: \nPresiona \"R\" para reiniciar\nPresiona \"Espacio\" para
+    el men\xFA\n"
 --- !u!222 &1346640665
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1292,7 +1293,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -69.5, y: -37.473}
+  m_AnchoredPosition: {x: -69.464, y: -37.97}
   m_SizeDelta: {x: 138.92749, y: 74.94638}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1379789949
@@ -1328,7 +1329,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PUNTAJE
+  m_Text: 
 --- !u!222 &1379789950
 CanvasRenderer:
   m_ObjectHideFlags: 0
